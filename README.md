@@ -71,3 +71,6 @@ If you find our work useful in your research please consider citing our paper.
 ## 📜 Disclaimer
 Extreme care should be taken before making any decisions based on the outputs of models presented here. Our goal in this work is to demonstrate the promise of large-scale representation learning for species range estimation, not to provide definitive range maps. Our models are trained on biased data and have not been calibrated or validated beyond the experiments illustrated in the paper. 
 
+## NOC Notes
+visualize by running `viz_map.py` as above. I would run `python viz_map.py --taxa_id taxa_id --model_path /path/to/model.pt` where `taxa_id` is the ID on OBIS (so puffinus puffinus would be 137203). 
+
