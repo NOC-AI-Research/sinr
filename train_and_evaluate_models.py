@@ -4,10 +4,13 @@ import torch
 
 import train
 import eval
+import time
 
 train_params = {}
 
-train_params['experiment_name'] = 'demo' # This will be the name of the directory where results for this run are saved.
+now = time.strftime('%Y%m%d_%H%M%S',time.gmtime())
+
+train_params['experiment_name'] = 'demo_'+now # This will be the name of the directory where results for this run are saved.
 
 '''
 species_set

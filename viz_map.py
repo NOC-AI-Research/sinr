@@ -51,7 +51,7 @@ def main(eval_params):
         mask = np.load(os.path.join(paths['masks'], 'ocean_mask_hr.npy'))
     else:
         mask = np.load(os.path.join(paths['masks'], 'ocean_mask.npy'))
-    mask_inds = np.where(mask.reshape(-1) == 1)[0]
+    mask_inds = np.where(mask.reshape(-1) != 1)[0]
         
     # generate input features
     locs = utils.coord_grid(mask.shape)

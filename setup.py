@@ -34,8 +34,8 @@ def get_default_params_train(overrides={}):
     '''
     data files
     '''
-    params['obs_file'] = 'geo_prior_train.csv'
-    params['taxa_file'] = 'geo_prior_train_meta.json'
+    params['obs_file'] = 'obis_train_20192024.csv'
+    params['taxa_file'] = 'obis_prior_train_meta_20192024.json'
 
     '''
     model
